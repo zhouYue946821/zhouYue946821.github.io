@@ -1,50 +1,96 @@
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		#myLunBo {
-			width: 300px;
-			height: 180px;
-			margin: 50px auto 0;
-			overflow: hidden;
-			position: relative;		
-		}
-		#myLunBo .myLunBoUl {
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-		#myLunBo .myLunBoUl li {
-			width: 300px;
-			height: 180px;
-			list-style: none;
-			position: absolute;
-			top: 0;left: 0;
-			background-color: blue;
-		}
-		#myLunBo .myLunBoUl li.onli {
-			z-index: 1;
-		}		
-		#myLunBo .myLunBoOl {
-			position: absolute;
-			bottom: 20px;
-			right: 20px;
-			z-index: 2;
-		}
-		#myLunBo .myLunBoOl .on {
-			background-color:green ;
-			color: #000000;
-		}		
-		#myLunBo .myLunBoOl li {
-			float: left;
-			width: 20px;
-			height: 20px;
-			margin-left: 5px;
-			border-radius: 5px;
-			background-color: red;
-			list-style: none;
-			line-height: 20px;
-			text-align: center;
-			font-family: "微软雅黑";
-			color: #FFFFFF;
-		}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+ul,li {
+	list-style: none;
+}
+.biaoTi {
+	width: 100%;
+	height: 50px;
+}
+.top {
+	width: 1200px;
+	margin: 0 auto;
+}
+.top:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+.top .div-left {
+	width: 600px;
+	height: 480px;
+	text-align: center;
+	float: left;
+	background-image: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-position: center ;
+}
+.top .div-rigth {
+	width: 600px;
+	height: 480px;
+	float: left;
+	position: relative;
+}
+.top .div-rigth .lunBo {
+	width: 500px;
+	height: 340px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #FFFFFF;
+	border: 3px solid moccasin;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.top .div-rigth .lunBo img {
+	width: 500px;
+	height: 340px;
+}
+.top .div-rigth .lunBo>ul {
+	width: 3500px;
+}
+.top .div-rigth .lunBo>ul li {
+	float: left;
+}
+.top .div-rigth .lunBo .lunBo-ol {
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -185px;
+}
+.top .div-rigth .lunBo .lunBo-ol>li {
+	color: #FFFFFF;
+	float: left;
+	margin-right: 10px;
+}
+.top .div-rigth .lunBo .lunBo-ol>li.on {
+	color: #0000FF;
+}
+.top .div-left .div-div {
+	width: 400px;
+	height: 280px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.top .div-left .div-div>ul>li {
+	display: inline-block;
+	width: 400px;
+	height: 50px;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+.top .div-left .div-div>ul>li.off {
+	color: mediumblue;
+}
