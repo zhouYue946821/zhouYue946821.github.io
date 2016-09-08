@@ -1,0 +1,50 @@
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		#myLunBo {
+			width: 300px;
+			height: 180px;
+			margin: 50px auto 0;
+			overflow: hidden;
+			position: relative;		
+		}
+		#myLunBo .myLunBoUl {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#myLunBo .myLunBoUl li {
+			width: 300px;
+			height: 180px;
+			list-style: none;
+			position: absolute;
+			top: 0;left: 0;
+			background-color: blue;
+		}
+		#myLunBo .myLunBoUl li.onli {
+			z-index: 1;
+		}		
+		#myLunBo .myLunBoOl {
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			z-index: 2;
+		}
+		#myLunBo .myLunBoOl .on {
+			background-color:green ;
+			color: #000000;
+		}		
+		#myLunBo .myLunBoOl li {
+			float: left;
+			width: 20px;
+			height: 20px;
+			margin-left: 5px;
+			border-radius: 5px;
+			background-color: red;
+			list-style: none;
+			line-height: 20px;
+			text-align: center;
+			font-family: "微软雅黑";
+			color: #FFFFFF;
+		}
